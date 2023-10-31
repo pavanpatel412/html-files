@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>website design using html css js</title>
+    <link rel="stylesheet" href="stylesheetjs1.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="https://ww2.freelogovectors.net/wp-content/uploads/2023/07/iphone-logo-02-freelogovectors.net_-640x400.png?lossy=1&ssl=1&fit=640%2C400">
+            </div>
+            <div class="nav-links">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">accesseries</a></li>
+                <li><a href="#">phone</a></li>
+                <li><a href="#">cart</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div class="informaton">
+        <div class="overlay"></div>
+            <img src="https://www.dealsmagnet.com/images/apple-iphone-14-plus-starlight-128-gb-o-18bYMn6D.jpg" class="mobile">
+            <div id="circle">
+                <div class="feature camera">
+                    <img src="https://png.pngtree.com/png-clipart/20190906/original/pngtree-white-camera-icon-png-image_4555375.jpg">
+                    <div>
+                        <h3>camera</h3>
+                        <p>12MP main camera and 12MP Ultra-wide sensor.</p>
+                    </div>
+                </div>
+                <div class="feature processor">
+                    <img src="">`
+                    <div>
+                        <h3>processor</h3>
+                        <p>Apple's improved Bionic A15 processor.</p>
+                    </div>
+                </div>
+                <div class="feature display">
+                    <img src="">
+                    <div>
+                        <h3>Display</h3>
+                        <p>6.1-inch OLED display</p>
+                    </div>
+                </div>
+                <div class="feature battery">
+                   <img src="">
+                   <div>
+                    <h3>Battery</h3>
+                    <p>iPhone 14 Pro's battery in 24 hours</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="https://icons.veryicon.com/png/o/internet--web/prejudice/up-arrow-5.png" id="upBtn">
+            <h2>features</h2>
+            <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png"  id="downBtn">
+        </div>
+    </div>
+    <script>
+        var circle  = document.getElementById("circle");
+        var upBtn   = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function()    
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+    
+</body>
+</html>
